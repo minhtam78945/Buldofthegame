@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai Thi</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <h2 id="name-logo">Trò chơi quay số</h2>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="indext.html">Trang chủ</a></li>
+            <li><a href="number.html">Trò Chơi quay số</a></li>
+            <li><a href="xoay.html">Trò chơi quay xucxuac</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="advers-left">
+            <ul>
+                <li>C#</li>
+                <li>PHP & MySQL</li>
+                <li>xml</li>
+                <li>java</li>
+                <li>SQL Server</li>
+                <li>Asp NET</li>
+                <li>android</li>
+                <li>winodws</li>
+                <li>Phone</li>
+            </ul>
+        </div>
+        <div class="content-main">
+            <div class="pap">
+                <div class="pap-header">
+                    <h2>Đăng kí mua hàng</h2>
+                </div>
+                <div class="form">
+                    <form>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Họ và tên : </td>
+                                    <td> <input type="text" name="text" id="user"></td>
+                                </tr>
+                                <tr>
+                                    <td>Email : </td>
+                                    <td> <input type="email" name="text" id="emmail"></td>
+                                </tr>
+                                <tr>
+                                    <td>số lượng mua : </td>
+                                    <td> <input type="number" name="text" id="many"></td>
+                                </tr>
+                                <tr>
+                                    <td>Ngày nhập hàng : </td>
+                                    <td> <input type="date" name="text" id="date"></td>
+                                </tr>
+                                <tr>
+                                    <td>Thanh toán : </td>
+                                    <td>
+                                        <input type="radio" id="bank" value="0" name="chose">Chuyển khoảng
+                                        <input type="radio" id="continue" value="1" name="chose"> Trực tiếp mua hàng
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="button">
+                            <input type="button" id="btn-home" onclick="Register()" value="Đăng kí mua hàng">
+                            <button id="btn2" type="reset">Xoá</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <p id="resu1"></p>
+            <p id="resu2"></p>
+            <p id="resu3"></p>
+            <p id="resu4"></p>
+        </div>
+        <div class="advert-right">
+            <div class="box1">Vùng quả cáo 1</div>
+            <div class="box2">Vùng quá cáo 2</div>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+
+</html>

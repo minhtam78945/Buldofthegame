@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai Thi</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+        .change {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        /* Paga2 */
+        .box1-page,
+        .box2-page,
+        .box3-page {
+            width: 30%;
+            margin-top: 20px;
+            display: flex;
+            padding: auto;
+            height: 200px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            background-color: gray;
+        }
+
+        .box1-page img {
+            width: 39%;
+        }
+
+        .box2-page img {
+
+            width: 39%;
+        }
+
+        .box3-page img {
+
+            width: 39%;
+        }
+
+        .button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input[type=button] {
+            margin-top: 10px;
+            margin-right: 137px;
+            text-align: center;
+            width: 10%;
+        }
+
+        #total {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #number1,
+        #number2,
+        #number3 {
+            font-size: 3em;
+            font-weight: 700;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <h2 id="name-logo">Trò chơi quay số</h2>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="indext.html">Trang chủ</a></li>
+            <li><a href="number.html">Trò Chơi quay số</a></li>
+            <li><a href="xoay.html">Trò chơi quay xucxuac</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="advers-left">
+            <ul>
+                <li>C#</li>
+                <li>PHP & MySQL</li>
+                <li>xml</li>
+                <li>java</li>
+                <li>SQL Server</li>
+                <li>Asp NET</li>
+                <li>android</li>
+                <li>winodws</li>
+                <li>Phone</li>
+            </ul>
+        </div>
+        <div class="content-main">
+            <div class="change">
+                <div class="box1-page">
+                    <p id="number1">5</p>
+                </div>
+                <div class="box2-page">
+                    <p id="number2">9</p>
+                </div>
+                <div class="box3-page">
+                    <p id="number3">10</p>
+                </div>
+            </div>
+            <p id="total"></p>
+            <div class="button">
+                <input type="button" id="btn" value="Quay" onclick="Random()">
+            </div>
+            <p id="total"></p>
+        </div>
+        <div class="advert-right">
+            <div class="box1">Vùng quả cáo 1</div>
+            <div class="box2">Vùng quá cáo 2</div>
+        </div>
+    </div>
+    <script>
+        function Random() {
+            const random1 = Math.floor(Math.random() * 20) + 1;
+            console.log(random1);
+            const random2 = Math.floor(Math.random() * 20) + 1;
+            console.log(random2);
+            const random3 = Math.floor(Math.random() * 20) + 1;
+            console.log(random3);
+            document.getElementById('number1').innerText = random1;
+            document.getElementById('number2').innerText = random2;
+            document.getElementById('number3').innerText = random3;
+            document.getElementById('total').innerHTML = random1 + random2 + random3;
+        }
+    </script>
+</body>
+
+</html>

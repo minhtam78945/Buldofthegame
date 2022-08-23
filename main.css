@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    background-color: green;
+    height: 120px;
+}
+
+#name-logo {
+    font-size: x-large;
+    color: yellow;
+    line-height: 100px;
+    text-align: center;
+}
+
+#name-logo:hover {
+    color: red;
+    font-size: xx-large;
+}
+
+.menu {
+    margin: 10px 0;
+    text-align: center;
+    background-color: blue;
+}
+
+.menu li {
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu a:hover {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: yellow;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.advers-left,
+.advert-right {
+    width: 15%;
+    min-height: 700px;
+    background: linear-gradient(to top, black, green);
+}
+
+.content-main {
+    position: relative;
+    width: 68%;
+    margin: 0 10px;
+    min-height: 700px;
+    border: 1px solid black;
+}
+
+.content-main .pap {
+    width: 100%;
+    margin-top: 10px;
+    line-height: 30px;
+    height: 250px;
+    background-color: cyan;
+
+}
+
+.content-main>p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.pap-header {
+    color: blue;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+}
+
+.form table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.button {
+    margin-left: 150px;
+}
+
+.button button {
+    padding: 2px;
+}
+
+.advert-right {
+    text-align: center;
+}
+
+.advert-right .box1,
+.box2 {
+    background-color: lightyellow;
+    width: 90%;
+    height: 30%;
+    margin-top: 30px;
+    line-height: 50px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.advers-left {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.advers-left ul {
+    font-family: 900;
+}
+
+.advers-left li {
+    margin: 20px;
+    padding: 10px 0;
+    text-indent: 30px;
+}
+
+.advers-left li:last-child {
+    list-style: none;
+}
+
+.change {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
